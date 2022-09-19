@@ -24,10 +24,7 @@ useEffect(() => {
           key={receita.id}
           nome={receita.nome}
           descricao={receita.breve_descricao}
-          imagem={receita.link_imagens}
-          ingredientes={receita.ingredientes}
-          modo_de_preparo={receita.modo_de_preparo}
-          preco={receita.preco}
+          imagem={receita.link_do_video}
           />))}
 
       </section>

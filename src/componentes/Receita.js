@@ -1,20 +1,18 @@
 import "./Receita.css";
 
-const Receita = ({ id, imagem, nome, descricao, preco, modo_de_preparo }) => {
+const Receita = ({ id, imagem, nome, descricao }) => {
   return (
     <div className="box-card">
       <div className="imagem">
-        <img src={imagem} alt={descricao} /> 
+      <iframe width="100%" height="100%" src={imagem} 
+      title="YouTube video player" 
+      frameborder="10" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
       </div>
       <div className="conteudo">
         <h1>{nome}</h1>
         <p>{descricao}</p>
       </div>
-      <div className="preco_leiamais">
-        <p>R$ {preco}</p>
-        <p><a href="https://marisareceitas.vercel.app/" className="leiamais">Leia mais</a></p>
       </div>
-    </div>
   );
 };
 
