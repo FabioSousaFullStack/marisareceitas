@@ -27,7 +27,8 @@ useEffect(() => {
           imagem={receita.link_imagens}
           ingredientes={receita.ingredientes}
           modo_de_preparo={receita.modo_de_preparo}
-          preco={receita.preco} />))}
+          preco={receita.preco}
+          />))}
 
       </section>
 

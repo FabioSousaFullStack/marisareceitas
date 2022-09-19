@@ -2,39 +2,19 @@ import "./Receita.css";
 
 const Receita = ({ id, imagem, nome, descricao, preco, modo_de_preparo }) => {
   return (
-
-    <div className="container">
-      <div className="card">
-        <div className="card__img">
-          <img
-            src={imagem}
-            alt="Imagem da receita"
-          />
-        </div>
-
-        <div className="card__title">
-          <p>{nome}</p>
-        </div>
-
-        <div className="card__content">
-          <h3>{descricao}</h3>
-        </div>
-
-        <div className="container_leiamais">
-        <div className="card_link">
-          <p>R$ {preco}</p>
-        </div>
-
-        <div className="card_leiamais">
-          <a href="/">Leia mais</a>
-        </div>
-        </div>
-
+    <div className="box-card">
+      <div className="imagem">
+        <img src={imagem} alt={descricao} /> 
+      </div>
+      <div className="conteudo">
+        <h1>{nome}</h1>
+        <p>{descricao}</p>
+      </div>
+      <div className="preco_leiamais">
+        <p>R$ {preco}</p>
+        <p><a href="" className="leiamais">Leia mais</a></p>
       </div>
     </div>
-
-
-
   );
 };
 
