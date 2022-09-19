@@ -12,7 +12,7 @@ const Receita = ({ id, imagem, nome, descricao, preco, modo_de_preparo }) => {
       </div>
       <div className="preco_leiamais">
         <p>R$ {preco}</p>
-        <p><a href="" className="leiamais">Leia mais</a></p>
+        <p><a href="https://marisareceitas.vercel.app/" className="leiamais">Leia mais</a></p>
       </div>
     </div>
   );

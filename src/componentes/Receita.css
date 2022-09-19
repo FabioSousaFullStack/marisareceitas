@@ -3,8 +3,15 @@
   box-shadow: gray 2px 5px;
   margin: 1em;
   width: 300px;
-  height: 300px;
+  height: 350px;
   border-radius: 2em;
+  display: flex;
+  flex-direction: column;
+}
+
+.box-card:hover{
+  width: 320px;
+  height: 370px;
 }
 
 .imagem img{
@@ -14,6 +21,7 @@
 
 .conteudo{
   text-align: center;
+  flex-grow: 1;
 }
 
 .preco_leiamais{
